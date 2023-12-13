@@ -40,8 +40,8 @@ int myenv_path(char **avv, char **aaa)
 		{
 			waitpid(ii, &ll, WUNTRACED);
 			free(ccmd);
-			if (WIFEXITED(l))
-				return (WEXITSTATUS(l));
+			if (WIFEXITED(ll))
+				return (WEXITSTATUS(ll));
 			return (EXIT_FAILURE);
 		}
 	}

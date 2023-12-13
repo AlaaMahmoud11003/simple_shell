@@ -28,7 +28,7 @@ int _myatoi(const char *ccmd)
 	}
 	if (ll == -1)
 	{
-		return (rres * l);
+		return (rres * ll);
 	}
 	return (rres);
 }

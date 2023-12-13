@@ -7,7 +7,9 @@
 char *_strdup(char *cmd)
 {
 	char *cp;
+
 	if (!cmd)
+
 	{
 		return (NULL);
 	}
@@ -28,7 +30,9 @@ char *_strdup(char *cmd)
 char *_strcpy(char *des, char *src)
 {
 	char *a = src;
+
 	while (*src != '\0')
+
 	{
 		*des++ = *src++;
 	}

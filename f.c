@@ -72,6 +72,7 @@ int mybu_path(char **avv, char **aaa)
 {
 	int ii;
 	char *builti[4] = {"cd", "env", "exit", NULL};
+
 	int (*builtinex[])(char **) = {
 		&mmy_cd,
 		&mmy_env,
@@ -85,7 +86,7 @@ int mybu_path(char **avv, char **aaa)
 	ii = 0;
 	while (builti[ii] != NULL)
 	{
-		if (_strcmp(builtii[ii], avv[0]) == 0)
+		if (_strcmp(builti[ii], avv[0]) == 0)
 		{
 			return ((*builtinex[ii])(avv));
 		}

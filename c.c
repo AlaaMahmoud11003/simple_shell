@@ -19,7 +19,7 @@ ssize_t myno_arg(char *ccmd)
 		ttoken = _strtok(NULL, TO_DEL);
 	}
 	free(ccmd_c);
-	return (n);
+	return (nn);
 }
 /**
 * myis_char - checks for char
