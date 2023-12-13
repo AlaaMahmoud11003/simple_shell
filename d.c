@@ -10,6 +10,7 @@ char *mylocation(char *ppath, char **avv)
 	char *ccmd = NULL;
 	char *ppath_c = NULL;
 	char *ttoken = NULL;
+
 	if (ppath)
 	{
 		ppath_c = _strdup(ppath);
@@ -53,7 +54,9 @@ char *mylocation(char *ppath, char **avv)
 void myfree_list(char ***avv)
 {
 	int dd = 0;
+
 	while ((*avv)[dd] != NULL)
+
 	{
 		free((*avv)[dd]);
 		dd++;
